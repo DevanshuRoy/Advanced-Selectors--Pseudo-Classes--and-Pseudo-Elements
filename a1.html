@@ -4,9 +4,65 @@
 
     <title>activity 1</title>
 
+    <style>
+
+        /*This is attribute selector*/
+        input[type="text"] {border: 2px dashed blue;}
+
+        /*This is child selector*/
+        ol>li {color: darkblue;}
+
+        /*This is sibling selector*/
+        h2+p {font-style: italic;}
+
+        /*This is pseudo class:hover*/
+        a:hover {color: rgb(3, 3, 81);}
+
+        /*This is pseudo class:nth-child*/
+        li:nth-child(2) {
+            width: 50px;
+            background-color: limegreen; 
+            color: rgb(0, 255, 0);
+        }
+
+        /*This is pseudo class:not*/
+        p:not(.c1) {border: 2.5px dotted gray;}
+
+        /*This is pseudo element before/after*/
+        .c3::before {content: "hello"; background-color: aqua;}
+        .c3::after {content: "bye"; background-color: aqua;}
+
+        /*first letter*/
+        p::first-letter {font-size: 35px; color: red;}
+
+    </style>
+
 </head>
 
 <body>
     
+    <h2>Advanced Selectors, Pseudo Classes, and Pseudo Elements</h2>
+
+    <p>HelloHelloHelloHello</p>
+    <p class="c1">HelloHelloHelloHello</p>
+    <p class="c2">HelloHelloHelloHello</p>
+    <p class="c3">HelloHelloHelloHello</p>
+    <p class="c4">HelloHelloHelloHello</p>
+
+    <a href="https://google.com">Google</a><br><br>
+
+    <form>
+        Name: <input type="text"><br><br>
+        Age: <input type="number">
+    </form><br>
+
+    <ol>
+        <li>Mangoes</li>
+        <li>Apples</li>
+        <li>Chickoo</li>
+        <li>Banana</li>
+        <li>Guava</li>
+    </ol>
+
 </body>
 </html>
